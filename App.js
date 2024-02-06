@@ -1,10 +1,30 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Navigation } from './src/screens/Navigation/Navigation';
+import { Login } from './src/screens/Login';
+import { SplashScreen } from './src/screens/SplashScreen';
+import { ForgotPassword } from './src/screens/ForgotPassword';
+import { CheckEmail } from './src/screens/CheckEmail';
+import { ResetPassword } from './src/screens/ResetPassword';
+import { CreateAccount } from './src/screens/CreateAccount';
+import { MedicQuery } from './src/screens/MedicQuery';
 
 //Instancia do stack navigator
 const Stack = createNativeStackNavigator();
 
+//Import fonts
+import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium } from "@expo-google-fonts/montserrat-alternates"
+
 export default function App() {
+  const [fontsLoaded, fontsError] = useFonts({
+    MontserratAlternates_600SemiBold,
+    MontserratAlternates_500Medium
+  });
+
+  if (!fontsLoaded && !fontsError) {
+    return null;
+  };
+
   return (
     /*Navegação*/
 
@@ -17,11 +37,17 @@ export default function App() {
 
       {/*Componente para navegação*/}
       <Stack.Navigator>
-        
-        <Stack.Screen name="Navegacao" component={Navegacao} options={{title: "Navegacao"}}/>
-      
+        {/*    Nome da tela                  componente da tela            titulo*/}
+        <Stack.Screen name="Navegacao" component={Navigation} options={{ title: "Navegação" }} />
+        <Stack.Screen name="SplashScreen" component={SplashScreen} options={{ title: "Splash Screen" }} />
+        <Stack.Screen name="Login" component={Login} options={{ title: "Login" }} />
+        <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{ title: "Esqueci senha" }} />
+        <Stack.Screen name="CheckEmail" component={CheckEmail} options={{ title: "Código E-mail" }} />
+        <Stack.Screen name="ResetPassword" component={ResetPassword} options={{ title: "Redefinir senha" }} />
+        <Stack.Screen name="CreateAccount" component={CreateAccount} options={{ title: "Criar conta" }} />
+        <Stack.Screen name="MedicQuery" component={MedicQuery} options={{ title: "Médico consulta" }} />
       </Stack.Navigator>
-    
+
     </NavigationContainer>
   );
 }

@@ -1,0 +1,9 @@
+import styled from "styled-components"
+
+export const Logo = styled.Image`
+    width: 214px;
+    height: 120px;
+
+    align-items: center;
+    margin: 29px 0px;
+`
