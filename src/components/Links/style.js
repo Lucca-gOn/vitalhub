@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { TextAccount } from "../Text/style";
 
 export const LinkMedium = styled.Text`
     font-size: 14px;
@@ -6,5 +7,10 @@ export const LinkMedium = styled.Text`
     text-decoration: underline;
     color: #8C8A97;
     align-self: flex-start;
-    margin: 10px 0px 0px 20px;
+    margin: 10px 0px 15px 20px;
+`
+
+export const LinkAccount = styled(TextAccount)`
+    color: #4D659D;
+    text-decoration: underline;
 `

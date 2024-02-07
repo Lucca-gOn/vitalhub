@@ -13,12 +13,13 @@ import { MedicQuery } from './src/screens/MedicQuery';
 const Stack = createNativeStackNavigator();
 
 //Import fonts
-import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium } from "@expo-google-fonts/montserrat-alternates"
+import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold } from "@expo-google-fonts/montserrat-alternates"
 
 export default function App() {
   const [fontsLoaded, fontsError] = useFonts({
     MontserratAlternates_600SemiBold,
-    MontserratAlternates_500Medium
+    MontserratAlternates_500Medium,
+    MontserratAlternates_700Bold
   });
 
   if (!fontsLoaded && !fontsError) {
