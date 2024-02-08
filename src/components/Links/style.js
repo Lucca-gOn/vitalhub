@@ -10,7 +10,11 @@ export const LinkMedium = styled.Text`
     margin: 10px 0px 15px 20px;
 `
 
-export const LinkAccount = styled(TextAccount)`
+export const LinkBlueMontserrat = styled(TextAccount)`
     color: #4D659D;
     text-decoration: underline;
+`
+
+export const LinkBlueMontserratMargin = styled(LinkBlueMontserrat)`
+    margin-top: 30px;
 `

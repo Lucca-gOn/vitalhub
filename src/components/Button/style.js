@@ -29,3 +29,7 @@ export const ButtonGoogle = styled(Button)`
 export const ButtonTitleGoogle = styled(ButtonTitle)`
     color: #496BBA;
 `
+
+export const ButtonMarginBlue = styled(Button)`
+    margin-top: 30px;
+`

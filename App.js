@@ -2,7 +2,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Navigation } from './src/screens/Navigation/Navigation';
 import { Login } from './src/screens/Login';
-import { SplashScreen } from './src/screens/SplashScreen';
 import { ForgotPassword } from './src/screens/ForgotPassword';
 import { CheckEmail } from './src/screens/CheckEmail';
 import { ResetPassword } from './src/screens/ResetPassword';
@@ -14,12 +13,15 @@ const Stack = createNativeStackNavigator();
 
 //Import fonts
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold } from "@expo-google-fonts/montserrat-alternates"
+import {Quicksand_500Medium, Quicksand_600SemiBold} from "@expo-google-fonts/quicksand"
 
 export default function App() {
   const [fontsLoaded, fontsError] = useFonts({
     MontserratAlternates_600SemiBold,
     MontserratAlternates_500Medium,
-    MontserratAlternates_700Bold
+    MontserratAlternates_700Bold,
+    Quicksand_500Medium,
+    Quicksand_600SemiBold
   });
 
   if (!fontsLoaded && !fontsError) {
@@ -40,7 +42,6 @@ export default function App() {
       <Stack.Navigator>
         {/*    Nome da tela                  componente da tela            titulo*/}
         <Stack.Screen name="Navegacao" component={Navigation} options={{ title: "Navegação" }} />
-        <Stack.Screen name="SplashScreen" component={SplashScreen} options={{ title: "Splash Screen" }} />
         <Stack.Screen name="Login" component={Login} options={{ title: "Login" }} />
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{ title: "Esqueci senha" }} />
         <Stack.Screen name="CheckEmail" component={CheckEmail} options={{ title: "Código E-mail" }} />

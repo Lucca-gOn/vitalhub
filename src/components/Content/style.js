@@ -6,3 +6,7 @@ export const ContentAccount = styled.View`
     justify-content: center;
     margin-top: 30;
 `
+export const ContentCheckEmail = styled.View`
+    flex-direction: row;
+    gap: 20px;
+`

@@ -2,11 +2,12 @@ import { Container } from "../../components/Container/style";
 import { Logo } from "../../components/Logo/style";
 import { Title } from "../../components/Title/style";
 import { Input } from "../../components/Input/style";
-import { LinkAccount, LinkMedium } from "../../components/Links/style";
+import { LinkBlueMontserrat, LinkMedium } from "../../components/Links/style";
 import { ButtonTitle, Button, ButtonGoogle, ButtonTitleGoogle } from "../../components/Button/style";
 import { ContentAccount } from "../../components/Content/style";
 import { TextAccount } from "../../components/Text/style";
 import { IconGoogle } from "../../components/Icon/style";
+import LogoSvg from "../../assets/logosvg.svg";
 
 export function Login() {
     return (
@@ -32,7 +33,7 @@ export function Login() {
 
             <ContentAccount>
                 <TextAccount>Não tem conta?</TextAccount>
-                <LinkAccount>Crie uma conta agora!</LinkAccount>
+                <LinkBlueMontserrat>Crie uma conta agora!</LinkBlueMontserrat>
             </ContentAccount>
         </Container>
     );
