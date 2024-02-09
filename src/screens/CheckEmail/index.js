@@ -1,18 +1,18 @@
-import { View, Text } from "react-native";
+
 import { Container } from "../../components/Container/style";
-import { Logo } from "../../components/Logo/style";
+import { LogoVital } from "../../components/Logo/style";
 import { Title } from "../../components/Title/style";
-import { TextBlueEmail, TextGray, TextGrayBlue } from "../../components/Text/style";
+import { TextBlueEmail, TextGray } from "../../components/Text/style";
 import { ContentCheckEmail } from "../../components/Content/style";
 import { InputNumber } from "../../components/Input/style";
 import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/style";
-import { LinkBlueMontserrat, LinkBlueMontserratEmail, LinkBlueMontserratMargin } from "../../components/Links/style";
+import { LinkBlueMontserratMargin } from "../../components/Links/style";
 
 export function CheckEmail () {
     return (
         <Container>
             
-            <Logo source={require("../../assets/logo.png")} />
+            <LogoVital/>
 
             <Title>Verifique seu e-mail</Title>
             

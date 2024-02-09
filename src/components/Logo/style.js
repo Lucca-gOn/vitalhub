@@ -1,6 +1,7 @@
 import styled from "styled-components"
+import Logo from "../../assets/logosvg.svg";
 
-export const Logo = styled.Image`
+export const LogoVital = styled(Logo)`
     width: 214px;
     height: 120px;
 

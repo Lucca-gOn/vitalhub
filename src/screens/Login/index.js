@@ -1,5 +1,4 @@
 import { Container } from "../../components/Container/style";
-import { Logo } from "../../components/Logo/style";
 import { Title } from "../../components/Title/style";
 import { Input } from "../../components/Input/style";
 import { LinkBlueMontserrat, LinkMedium } from "../../components/Links/style";
@@ -7,12 +6,12 @@ import { ButtonTitle, Button, ButtonGoogle, ButtonTitleGoogle } from "../../comp
 import { ContentAccount } from "../../components/Content/style";
 import { TextAccount } from "../../components/Text/style";
 import { IconGoogle } from "../../components/Icon/style";
-import LogoSvg from "../../assets/logosvg.svg";
+import { LogoVital } from "../../components/Logo/style";
 
 export function Login() {
     return (
         <Container>
-            <Logo source={require("../../assets/logo.png")} />
+            <LogoVital/>
 
             <Title>Entrar ou criar conta</Title>
 
@@ -27,7 +26,7 @@ export function Login() {
             </Button>
 
             <ButtonGoogle>
-                <IconGoogle source={require('../../assets/google.png')} />
+                <IconGoogle/>
                 <ButtonTitleGoogle>Entrar com Google</ButtonTitleGoogle>
             </ButtonGoogle>
 

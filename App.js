@@ -7,13 +7,15 @@ import { CheckEmail } from './src/screens/CheckEmail';
 import { ResetPassword } from './src/screens/ResetPassword';
 import { CreateAccount } from './src/screens/CreateAccount';
 import { MedicQuery } from './src/screens/MedicQuery';
+import { Image } from 'react-native';
+
 
 //Instancia do stack navigator
 const Stack = createNativeStackNavigator();
 
 //Import fonts
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold } from "@expo-google-fonts/montserrat-alternates"
-import {Quicksand_500Medium, Quicksand_600SemiBold} from "@expo-google-fonts/quicksand"
+import { Quicksand_500Medium, Quicksand_600SemiBold } from "@expo-google-fonts/quicksand"
 
 export default function App() {
   const [fontsLoaded, fontsError] = useFonts({

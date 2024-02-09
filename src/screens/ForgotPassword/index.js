@@ -1,14 +1,14 @@
 import { Container } from "../../components/Container/style";
-import { Logo } from "../../components/Logo/style";
+import { LogoVital } from "../../components/Logo/style";
 import { Title } from "../../components/Title/style";
 import { TextGray } from "../../components/Text/style";
 import { Input } from "../../components/Input/style";
-import { ButtonForgotPassword, ButtonMarginBlue, ButtonTitle } from "../../components/Button/style";
+import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/style";
 
 export function ForgotPassword () {
     return (
         <Container>
-            <Logo source={require("../../assets/logo.png")} />
+            <LogoVital/>
 
             <Title>Recuperar senha</Title>
 
