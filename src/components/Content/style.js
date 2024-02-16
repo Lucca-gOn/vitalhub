@@ -10,3 +10,7 @@ export const ContentCheckEmail = styled.View`
     flex-direction: row;
     gap: 20px;
 `
+export const ContentStatus = styled.View`
+    flex-direction: row;
+    gap: 10;
+`
