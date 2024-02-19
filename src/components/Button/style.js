@@ -33,16 +33,3 @@ export const ButtonTitleGoogle = styled(ButtonTitle)`
 export const ButtonMarginBlue = styled(Button)`
     margin-top: 30px;
 `
-export const ButtonStatus = styled(Button)`
-    width: 29%;
-    height: 39px;
-    margin-top: 23px;
-    border: 2px solid #607EC5;
-    background-color: #FBFBFB;
-`
-export const ButtoTitleStatus = styled(ButtonTitle)`
-    color: #607EC5;
-    font-family: "MontserratAlternates_600SemiBold";
-    font-size: 12px;
-    text-transform: none;
-`

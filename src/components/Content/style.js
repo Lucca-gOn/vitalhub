@@ -11,6 +11,14 @@ export const ContentCheckEmail = styled.View`
     gap: 20px;
 `
 export const ContentStatus = styled.View`
+    width: 90%;
     flex-direction: row;
-    gap: 10;
+    justify-content: space-between;
+
+    margin: 38px 0px 20px;
+`
+export const ContentFlatList = styled.FlatList`
+    width: 90%;
+    height: 216px;
+    justify-content: space-between;
 `
