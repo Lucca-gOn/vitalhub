@@ -23,3 +23,7 @@ export const TextBlueEmail = styled(TextGray)`
 export const TextGrayCreateAccount = styled(TextGray)`
     margin: 5px;
 `
+
+export const TextGrayCancelModal = styled(TextGray)`
+    color: #4E4B59;
+`

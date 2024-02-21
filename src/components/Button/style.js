@@ -33,3 +33,4 @@ export const ButtonTitleGoogle = styled(ButtonTitle)`
 export const ButtonMarginBlue = styled(Button)`
     margin-top: 30px;
 `
+
