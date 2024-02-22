@@ -27,3 +27,6 @@ export const TextGrayCreateAccount = styled(TextGray)`
 export const TextGrayCancelModal = styled(TextGray)`
     color: #4E4B59;
 `
+export const TextGrayModalPatient = styled(TextGray)`
+    font-size: 14px;
+`

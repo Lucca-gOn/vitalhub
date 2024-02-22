@@ -20,3 +20,10 @@ export const ContainerHeader = styled(LinearGradient).attrs({ colors: ['#60BFC5'
 
     padding: 20px;
 `
+
+export const PatientContainer = styled.View`
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.6);
+`

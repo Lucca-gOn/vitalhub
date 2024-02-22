@@ -9,6 +9,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { ListComponent } from "../List/List";
 import { CardQuery } from "../CardQuery/cardquery";
 import { CancellationModal } from "../CancellationModal/cancellationmodal";
+import { MedicalRecordModal } from "../MedicalRecordModal/medicalrecordmodal";
 
 const Query = [
     { id: 1, nome: "Lucas", situacao: "agendadas" },
@@ -28,6 +29,8 @@ export function Header() {
     //State para os modals
     const [showModalCancel, setShowModalCancel] = useState(false);
     const [showModalMedicalRecord, setshowModalMedicalRecord] = useState(false);
+
+
 
     return (
         <Container>
@@ -73,6 +76,7 @@ export function Header() {
             />
 
             <CancellationModal visible={showModalCancel} setShowModalCancel={setShowModalCancel}/>
+            <MedicalRecordModal visible={showModalMedicalRecord} setshowModalMedicalRecord={setshowModalMedicalRecord}/>
         </Container>
     );
 }
