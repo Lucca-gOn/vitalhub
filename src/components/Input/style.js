@@ -25,3 +25,14 @@ export const InputNumber = styled(Input)`
   font-size: 40px;
   font-family: "Quicksand_600SemiBold";
 `
+export const InputLarge = styled(Input)`
+  width: 100%;
+  height: 121px;
+  padding-bottom: 84px; 
+  margin-bottom: 20px;
+`
+
+export const InputMedium = styled(InputLarge)`
+  height: 53px;
+  padding-bottom: 16px;
+`

@@ -7,3 +7,12 @@ export const Title = styled.Text`
 
     margin-bottom: 5px;
 `
+export const TitleMedicalRecord = styled(Title)`
+    margin: 20px 0px 10px 0px;
+
+`
+export const TitleWithInput = styled.Text`
+    font-family: "Quicksand_600SemiBold";
+    font-size: 16px;
+    margin-bottom: 10px;
+`

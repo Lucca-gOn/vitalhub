@@ -33,4 +33,11 @@ export const ButtonTitleGoogle = styled(ButtonTitle)`
 export const ButtonMarginBlue = styled(Button)`
     margin-top: 30px;
 `
-
+export const ButtonMedicalRecord = styled(Button)`
+    width: 100%;
+    margin-top: 10px;
+`
+export const ButtonMedicalRecordEdit = styled(ButtonMedicalRecord)`
+    margin-top: 30px;
+    background-color: rgba(73, 107, 186, 0.33);
+`

@@ -43,3 +43,13 @@ export const ContentTextModalPatient = styled.View`
 
     margin-top: 12px;
 `
+export const InsertMedicalRecordContent = styled.SafeAreaView`
+
+`
+export const ContentTextMedicalRecord = styled(ContentTextModalPatient)`
+    margin: 0px 0px 24px 0px;
+`
+export const InputWithTitleContent = styled.View`
+    width: 320px;
+    align-items: flex-start;
+`
