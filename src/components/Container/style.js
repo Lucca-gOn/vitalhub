@@ -32,3 +32,10 @@ export const InsertMedicalRecordImageContainer = styled.View`
     width: 100%;
     height: 280px;
 `
+export const ContainerHeaderHome = styled(Container)`
+    flex: none;
+`
+
+export const ScheduleContainer = styled(PatientContainer)`
+    justify-content: flex-end;
+`

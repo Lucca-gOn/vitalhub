@@ -1,36 +1,32 @@
-import { View, Text } from "react-native";
-import { Header } from "../../components/Header/header";
-import { Container } from "../../components/Container/style";
 import { useState } from "react";
-import { ContentStatus } from "../../components/Content/style";
-import { StatusQuery } from "../../components/StatusQuery/statusquery";
+import { Container } from "../../components/Container/style";
+import { ContentIconPatientQuery, ContentSquareIcon, ContentStatus } from "../../components/Content/style";
+import { Header } from "../../components/Header/header";
 import { ListComponent } from "../../components/List/List";
+import { StatusQuery } from "../../components/StatusQuery/statusquery";
 import { CardQuery } from "../../components/CardQuery/cardquery";
+import { MaterialIcons } from "@expo/vector-icons";
+import { IconStethoscope } from "../../components/Icon/style";
 import { CancellationModal } from "../../components/CancellationModal/cancellationmodal";
 import { MedicalRecordModal } from "../../components/MedicalRecordModal/medicalrecordmodal";
+import { ScheduleAppointmentModal } from "../../components/ScheduleAppointmentModal/scheduleappointmentmodal";
+import { ButtonSchedule } from "../../components/ButtonSchedule/buttonschedule";
 
-const Query = [
-    { id: 1, nome: "Lucas", situacao: "agendadas" },
-    { id: 2, nome: "Lucas2", situacao: "realizado" },
-    { id: 3, nome: "Lucas3", situacao: "cancelado" },
-    { id: 4, nome: "Lucas4", situacao: "realizado" },
-    { id: 5, nome: "Lucas5", situacao: "realizado" },
-    { id: 6, nome: "Lucas6", situacao: "agendadas" },
-    { id: 7, nome: "Lucas7", situacao: "agendadas" },
-    { id: 8, nome: "Lucas8", situacao: "agendadas" },
-
+const PatientQueryArray = [
+    { id: 1, nome: "Fulano", situacao: "agendadas" },
+    { id: 2, nome: "Ciclano", situacao: "realizado" },
+    { id: 3, nome: "Beltrano", situacao: "cancelado" }
 ]
 
-export function MedicQuery() {
+export function PatientQuery() {
     const [statusList, setStatusList] = useState("agendadas")
 
-    //State para os modals
+    const [showModalSchedule, setshowModalSchedule] = useState(false);
     const [showModalCancel, setShowModalCancel] = useState(false);
-    const [showModalMedicalRecord, setshowModalMedicalRecord] = useState(false);
-    
     return (
+
         <>
-            <Header source="https://github.com/Lucca-gOn.png" name="Dr. Lucas"/>
+            <Header source="https://github.com/MagiLogus.png" name="Paciente Paulo" />
             <Container>
                 <ContentStatus>
                     <StatusQuery textButton={"Agendadas"} clickButton={statusList === "agendadas"} onPress={() => setStatusList("agendadas")} />
@@ -39,7 +35,7 @@ export function MedicQuery() {
                 </ContentStatus>
 
                 <ListComponent
-                    data={Query}
+                    data={PatientQueryArray}
                     keyExtractor={(item) => item.id}
 
                     renderItem={({ item }) =>
@@ -47,18 +43,17 @@ export function MedicQuery() {
                             <CardQuery
                                 situacao={item.situacao}
                                 onPressCancel={() => setShowModalCancel(true)}
-                                onPressMedicalRecord={() => setshowModalMedicalRecord(true)}
                             />
                         )
                     }
-
                     contentContainerStyle={{ alignItems: 'center' }}
                 />
 
                 <CancellationModal visible={showModalCancel} setShowModalCancel={setShowModalCancel} />
-                <MedicalRecordModal visible={showModalMedicalRecord} setshowModalMedicalRecord={setshowModalMedicalRecord} />
+                <ScheduleAppointmentModal visible={showModalSchedule} setshowModalSchedule={setshowModalSchedule} />
+
+                <ButtonSchedule onPressSchedule={() => setshowModalSchedule(true)} />
             </Container>
         </>
-
     );
-}
+};

@@ -1,6 +1,6 @@
 import { Button, ButtonMedicalRecord, ButtonMedicalRecordEdit, ButtonTitle } from "../../components/Button/style";
 import { Container } from "../../components/Container/style";
-import { ContentTextMedicalRecord, ContentTextModalPatient } from "../../components/Content/style";
+import { ContentLinkCenter, ContentTextMedicalRecord, ContentTextModalPatient } from "../../components/Content/style";
 import { InputMedium } from "../../components/Input/style";
 import { InputWithTitle } from "../../components/InputWithTitle/inputwithtitle";
 import { InputWithTitleMedium } from "../../components/InputWithTitleMedium/inputwithtitlemedium";
@@ -33,9 +33,11 @@ export function InsertMedicalRecord() {
                 <ButtonMedicalRecordEdit>
                     <ButtonTitle>Editar</ButtonTitle>
                 </ButtonMedicalRecordEdit>
-            </ScrollForm>
 
-            <LinkBlueMontserratMargin>Cancelar</LinkBlueMontserratMargin>
+                <ContentLinkCenter>
+                    <LinkBlueMontserratMargin>Cancelar</LinkBlueMontserratMargin>
+                </ContentLinkCenter>
+            </ScrollForm>
         </Container>
 
     );

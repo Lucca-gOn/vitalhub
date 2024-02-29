@@ -17,6 +17,7 @@ const Stack = createNativeStackNavigator();
 import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Medium, MontserratAlternates_700Bold } from "@expo-google-fonts/montserrat-alternates"
 import { Quicksand_500Medium, Quicksand_600SemiBold } from "@expo-google-fonts/quicksand"
 import { InsertMedicalRecord } from './src/screens/InsertMedicalRecord';
+import { PatientQuery } from './src/screens/PatientQuery';
 
 
 export default function App() {
@@ -53,6 +54,8 @@ export default function App() {
         <Stack.Screen name="CreateAccount" component={CreateAccount} options={{ title: "Criar conta" }} />
         <Stack.Screen name="MedicQuery" component={MedicQuery} options={{ title: "Médico consulta" }} />
         <Stack.Screen name="InsertMedicalRecord" component={InsertMedicalRecord} options={{ title: "Inserir Prontuário" }} />
+        <Stack.Screen name="PatientQuery" component={PatientQuery} options={{ title: "Paciente consulta" }} />
+
       </Stack.Navigator>
 
     </NavigationContainer>

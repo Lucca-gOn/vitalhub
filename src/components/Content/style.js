@@ -53,3 +53,31 @@ export const InputWithTitleContent = styled.View`
     width: 320px;
     align-items: flex-start;
 `
+export const ContentLinkCenter = styled.View`
+    width: 100%;
+    align-items: center;
+`
+export const ContentIconPatientQuery = styled.View`
+    width: 90%;
+    align-items: flex-end;
+`
+
+export const ContentSquareIcon = styled.TouchableOpacity `
+    width: 60px;
+    height: 60px;
+    background-color: #49B3BA;
+    border-radius: 7px;
+
+    align-items: center;
+    justify-content: center;
+
+    shadow-color: black;
+    shadow-offset: 4px 4px;
+    shadow-opacity: 0.5;
+    shadow-radius: 10px;
+`
+export const ModalContentSchedule = styled(ModalContent)`
+    width: 100%;
+    height: 518px;
+
+`
