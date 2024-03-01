@@ -81,3 +81,12 @@ export const ModalContentSchedule = styled(ModalContent)`
     height: 518px;
 
 `
+
+export const InputWithTitleContentPicker = styled(InputWithTitleContent)`
+    
+`
+
+export const ContentLevelQuery = styled(ContentStatus)`
+    margin: 0px;
+    width: 100%;
+`

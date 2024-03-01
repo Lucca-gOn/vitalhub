@@ -1,8 +1,17 @@
-import styled from "styled-components/native";
-import {Picker} from '@react-native-picker/picker';
+import styled from "styled-components";
+import { TitleWithInput } from "../Title/style";
+import { ButtonStatus } from "../StatusQuery/style";
 
-export const PickerSchedule = styled.Picker`
+export const SelectPicker = styled.View`
     width: 100%;
-    height: 100px;
-    background-color: white;
+    height: 53px;
+    border-radius: 5px;
+    border: solid 2px #60BFC5;
+
+    padding: 16px;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin-bottom: 20px;
 `
+
