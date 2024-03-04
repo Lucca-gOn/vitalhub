@@ -79,7 +79,8 @@ export const ContentSquareIcon = styled.TouchableOpacity `
 export const ModalContentSchedule = styled(ModalContent)`
     width: 100%;
     height: 518px;
-
+    background-color: #FAFAFA;
+    padding-bottom: 35px;
 `
 
 export const InputWithTitleContentPicker = styled(InputWithTitleContent)`
@@ -87,6 +88,9 @@ export const InputWithTitleContentPicker = styled(InputWithTitleContent)`
 `
 
 export const ContentLevelQuery = styled(ContentStatus)`
-    margin: 0px;
+    margin: 0px 0px 20px 0px;
     width: 100%;
+`
+export const ContentText = styled.View`
+    gap: 10px;
 `

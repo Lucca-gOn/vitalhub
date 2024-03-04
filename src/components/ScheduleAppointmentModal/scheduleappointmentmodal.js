@@ -1,7 +1,7 @@
 import { Modal } from "react-native";
 import { Title, TitleMedicalRecord, TitlePicker, TitleWithInput } from "../Title/style";
 import { Container, PatientContainer, ScheduleContainer } from "../Container/style";
-import { ContentLevelQuery, ContentPicker, ContentStatus, InputWithTitleContent, InputWithTitleContentPicker, ModalContentMedicalRecord, ModalContentSchedule } from "../Content/style";
+import { ContentLevelQuery, ContentLinkCenter, ContentPicker, ContentStatus, InputWithTitleContent, InputWithTitleContentPicker, ModalContentMedicalRecord, ModalContentSchedule } from "../Content/style";
 import { ImageModalMedic } from "../MedicalRecordModal/style";
 import { useState } from "react";
 import { Picker } from '@react-native-picker/picker';
@@ -12,6 +12,8 @@ import { SelectPicker, TitleInputPicker } from "./style";
 import { IconSelect } from "../Icon/style";
 import { ButtonLevelQuery } from "../ButtonLevelQuery/buttonlevelquery";
 import { InputWithTitleMedium } from "../InputWithTitleMedium/inputwithtitlemedium";
+import { ButtonMedicalRecord, ButtonTitle } from "../Button/style";
+import { LinkBlueMontserratMargin } from "../Links/style";
 
 
 
@@ -57,15 +59,25 @@ export const ScheduleAppointmentModal = ({ visible, setshowModalSchedule, ...res
                         />
                         <IconSelect />
                     </SelectPicker>
-                    <InputWithTitleContent style={{ width: '100%' }}>
+                    <InputWithTitleContent style={{ width: "100%" }}>
                         <TitleWithInput>Informe o tipo de consulta</TitleWithInput>
                     </InputWithTitleContent>
-                    
+
                     <ContentLevelQuery>
                         <ButtonLevelQuery textButton={"Rotina"} clickButton={statusList === "rotina"} onPress={() => setStatusList("rotina")} />
                         <ButtonLevelQuery textButton={"Exame"} clickButton={statusList === "exame"} onPress={() => setStatusList("exame")} />
                         <ButtonLevelQuery textButton={"Urgência"} clickButton={statusList === "urgencia"} onPress={() => setStatusList("urgencia")} />
                     </ContentLevelQuery>
+
+                    <InputWithTitleMedium title={"Diagnóstico do paciente"} placeholder={"Diagnóstico"} />
+
+                    <ButtonMedicalRecord onPress={() => setshowModalSchedule(false)}>
+                        <ButtonTitle>Continuar</ButtonTitle>
+                    </ButtonMedicalRecord>
+
+                    <ContentLinkCenter>
+                        <LinkBlueMontserratMargin onPress= {() => setshowModalSchedule(false)}>Cancelar</LinkBlueMontserratMargin>
+                    </ContentLinkCenter>
                 </ModalContentSchedule>
             </ScheduleContainer>
         </Modal>

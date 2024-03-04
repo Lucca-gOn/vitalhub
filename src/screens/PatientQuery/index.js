@@ -11,6 +11,7 @@ import { CancellationModal } from "../../components/CancellationModal/cancellati
 import { MedicalRecordModal } from "../../components/MedicalRecordModal/medicalrecordmodal";
 import { ScheduleAppointmentModal } from "../../components/ScheduleAppointmentModal/scheduleappointmentmodal";
 import { ButtonSchedule } from "../../components/ButtonSchedule/buttonschedule";
+import { ContentButtonSchedule } from "./style";
 
 const PatientQueryArray = [
     { id: 1, nome: "Fulano", situacao: "agendadas" },
@@ -52,7 +53,10 @@ export function PatientQuery() {
                 <CancellationModal visible={showModalCancel} setShowModalCancel={setShowModalCancel} />
                 <ScheduleAppointmentModal visible={showModalSchedule} setshowModalSchedule={setshowModalSchedule} />
 
-                <ButtonSchedule onPressSchedule={() => setshowModalSchedule(true)} />
+                <ContentButtonSchedule>
+                    <ButtonSchedule onPressSchedule={() => setshowModalSchedule(true)} />
+                </ContentButtonSchedule>
+
             </Container>
         </>
     );

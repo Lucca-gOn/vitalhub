@@ -20,3 +20,7 @@ export const TitleWithInput = styled.Text`
 export const TitlePicker = styled(Title)`
     margin-bottom: 29px;
 `
+
+export const TitleSelectClinic = styled(Title)`
+    margin: 35px 0px 35px 0px;
+`

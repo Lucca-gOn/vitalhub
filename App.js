@@ -18,6 +18,9 @@ import { useFonts, MontserratAlternates_600SemiBold, MontserratAlternates_500Med
 import { Quicksand_500Medium, Quicksand_600SemiBold } from "@expo-google-fonts/quicksand"
 import { InsertMedicalRecord } from './src/screens/InsertMedicalRecord';
 import { PatientQuery } from './src/screens/PatientQuery';
+import { SelectClinic } from './src/screens/SelectClinic';
+import { SelectMedic } from './src/screens/SelectMedic';
+import { SelectDate } from './src/screens/SelectDate';
 
 
 export default function App() {
@@ -55,7 +58,9 @@ export default function App() {
         <Stack.Screen name="MedicQuery" component={MedicQuery} options={{ title: "Médico consulta" }} />
         <Stack.Screen name="InsertMedicalRecord" component={InsertMedicalRecord} options={{ title: "Inserir Prontuário" }} />
         <Stack.Screen name="PatientQuery" component={PatientQuery} options={{ title: "Paciente consulta" }} />
-
+        <Stack.Screen name="SelectClinic" component={SelectClinic} options={{ title: "Selecionar clinica" }} />
+        <Stack.Screen name="SelectMedic" component={SelectMedic} options={{ title: "Selecionar medico" }} />
+        <Stack.Screen name="SelectDate" component={SelectDate} options={{ title: "Selecionar data" }} />
       </Stack.Navigator>
 
     </NavigationContainer>
