@@ -1,6 +1,6 @@
-import { CalendarList } from "../Calendar/calendar";
-import { ContainerHeader, ContainerHeaderHome } from "../Container/style";
-import { BoxUser, DataUser, ImageUser, NameUser, TextDefault } from "./style";
+import { CalendarList } from "../Calendar/Calendar";
+import { ContainerHeader, ContainerHeaderHome } from "../Container/Style";
+import { BoxUser, DataUser, ImageUser, NameUser, TextDefault } from "./Style";
 import { MaterialIcons } from '@expo/vector-icons';
 
 export function Header({source, name}) {

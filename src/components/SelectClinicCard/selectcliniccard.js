@@ -1,6 +1,6 @@
 import { AntDesign } from "@expo/vector-icons"
-import { ClockCard, ContainerCardsList, ContentCard, ProfileName, TextBold, ViewRow } from "../CardQuery/style"
-import { Star } from "../Icon/style"
+import { ClockCard, ContainerCardsList, ContentCard, ProfileName, TextBold, ViewRow } from "../CardQuery/Style"
+import { Star } from "../Icon/Style"
 import { ContainerCardsListCard, ContentSelectClinic, ContentSelectClinicTitle, IconContent, Local, NumberStar, ViewRowClinicCard } from "./style"
 
 export const SelectClinicCard = ({ title, numberStarYellow, local, date }) => {

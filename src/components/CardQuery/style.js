@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Title } from "../Title/style";
+import { Title } from "../Title/Style";
 
 export const ContainerCardsList = styled.View`
     width: 100% ;

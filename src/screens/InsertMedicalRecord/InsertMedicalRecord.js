@@ -1,13 +1,13 @@
-import { Button, ButtonMedicalRecord, ButtonMedicalRecordEdit, ButtonTitle } from "../../components/Button/style";
-import { Container } from "../../components/Container/style";
-import { ContentLinkCenter, ContentTextMedicalRecord, ContentTextModalPatient } from "../../components/Content/style";
-import { InputMedium } from "../../components/Input/style";
-import { InputWithTitle } from "../../components/InputWithTitle/inputwithtitle";
-import { InputWithTitleMedium } from "../../components/InputWithTitleMedium/inputwithtitlemedium";
-import { InsertMedicalRecordImage } from "../../components/InsertMedialRecordImage/insertmedicalrecordimage";
-import { LinkBlueMontserratMargin } from "../../components/Links/style";
-import { TextGrayModalPatient } from "../../components/Text/style";
-import { Title, TitleMedicalRecord } from "../../components/Title/style";
+import { Button, ButtonMedicalRecord, ButtonMedicalRecordEdit, ButtonTitle } from "../../components/Button/Style";
+import { Container } from "../../components/Container/Style";
+import { ContentLinkCenter, ContentTextMedicalRecord, ContentTextModalPatient } from "../../components/Content/Style";
+import { InputMedium } from "../../components/Input/Style";
+import { InputWithTitle } from "../../components/InputWithTitle/InputWithTitle";
+import { InputWithTitleMedium } from "../../components/InputWithTitleMedium/InputWithTitleMedium";
+import { InsertMedicalRecordImage } from "../../components/InsertMedialRecordImage/InsertMedialRecordImage";
+import { LinkBlueMontserratMargin } from "../../components/Links/Style";
+import { TextGrayModalPatient } from "../../components/Text/Style";
+import { Title, TitleMedicalRecord } from "../../components/Title/Style";
 import { ScrollForm } from "./style";
 
 export function InsertMedicalRecord() {

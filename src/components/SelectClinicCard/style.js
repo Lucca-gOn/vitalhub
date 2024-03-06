@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ContainerCardsList, ContentCard, ViewRow } from "../CardQuery/style";
+import { ContainerCardsList, ContentCard, ViewRow } from "../CardQuery/Style";
 
 export const ContentSelectClinic = styled.View`
     width: 100%;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { TitleWithInput } from "../Title/style";
-import { ButtonStatus } from "../StatusQuery/style";
+import { TitleWithInput } from "../Title/Style";
+import { ButtonStatus } from "../StatusQuery/Style";
 
 export const SelectPicker = styled.View`
     width: 100%;

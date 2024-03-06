@@ -62,7 +62,7 @@ export const ContentIconPatientQuery = styled.View`
     align-items: flex-end;
 `
 
-export const ContentSquareIcon = styled.TouchableOpacity `
+export const ContentSquareIcon = styled.TouchableOpacity`
     width: 60px;
     height: 60px;
     background-color: #49B3BA;
@@ -94,3 +94,17 @@ export const ContentLevelQuery = styled(ContentStatus)`
 export const ContentText = styled.View`
     gap: 10px;
 `
+export const MapContent = styled.View`
+    flex: 1;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background: #fff;
+    elevation: 4; 
+    shadow-color: rgba(0, 0, 0, 0.1);
+    shadow-offset: 0px -4px;
+    shadow-opacity: 1;
+    shadow-radius: 15px;
+    margin-top: -25px;
+    align-items: center;
+`
+

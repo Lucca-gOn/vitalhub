@@ -1,4 +1,4 @@
-import { ButtoTitleStatus, ButtonStatus } from "./style"
+import { ButtoTitleStatus, ButtonStatus } from "./Style"
 
 
 export const StatusQuery = ({textButton, clickButton=false, onPress}) => {

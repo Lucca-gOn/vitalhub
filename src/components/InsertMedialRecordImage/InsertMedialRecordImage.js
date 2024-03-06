@@ -1,6 +1,6 @@
-import { InsertMedicalRecordImageContainer } from "../Container/style";
-import { InsertMedicalRecordContent } from "../Content/style";
-import { InsertMedicalRecordImageProfile } from "./style";
+import { InsertMedicalRecordImageContainer } from "../Container/Style";
+import { InsertMedicalRecordContent } from "../Content/Style";
+import { InsertMedicalRecordImageProfile } from "./Style";
 
 
 export function InsertMedicalRecordImage() {

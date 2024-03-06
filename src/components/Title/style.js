@@ -24,3 +24,13 @@ export const TitlePicker = styled(Title)`
 export const TitleSelectClinic = styled(Title)`
     margin: 35px 0px 35px 0px;
 `
+
+export const TitleCalendar = styled(Title)`
+    margin-top: 30px;
+`
+
+export const Subtitle = styled.Text`
+    font-size: 14px;
+    font-family: "Quicksand_600SemiBold";
+    color: #4E4B59;
+`

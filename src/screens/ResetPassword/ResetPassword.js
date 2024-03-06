@@ -1,9 +1,9 @@
-import { Container } from "../../components/Container/style";
-import { LogoVital } from "../../components/Logo/style";
-import { Title } from "../../components/Title/style";
-import { TextGray } from "../../components/Text/style";
-import { Input } from "../../components/Input/style";
-import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/style";
+import { Container } from "../../components/Container/Style";
+import { LogoVital } from "../../components/Logo/Style";
+import { Title } from "../../components/Title/Style";
+import { TextGray } from "../../components/Text/Style";
+import { Input } from "../../components/Input/Style";
+import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/Style";
 
 export function ResetPassword () {
     return (

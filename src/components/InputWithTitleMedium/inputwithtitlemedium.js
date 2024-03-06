@@ -1,7 +1,7 @@
-import { Container } from "../Container/style";
-import { InputWithTitleContent } from "../Content/style";
-import { InputLarge, InputMedium } from "../Input/style";
-import { TitleWithInput } from "../Title/style";
+import { Container } from "../Container/Style";
+import { InputWithTitleContent } from "../Content/Style";
+import { InputLarge, InputMedium } from "../Input/Style";
+import { TitleWithInput } from "../Title/Style";
 
 export function InputWithTitleMedium({ title, placeholder, }) {
     return (

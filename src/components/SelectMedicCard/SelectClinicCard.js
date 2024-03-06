@@ -1,6 +1,6 @@
-import { ProfileName } from "../CardQuery/style"
-import {  ContainerMedicCard, ImageSelectMedic, MedicSpecialty} from "./style"
-import { ContentText } from "../Content/style"
+import { ProfileName } from "../CardQuery/Style"
+import {  ContainerMedicCard, ImageSelectMedic, MedicSpecialty} from "./Style"
+import { ContentText } from "../Content/Style"
 import { ContainerCardsListCard } from "../SelectClinicCard/style"
 
 export const SelectMedicCard = ({ title, subtitle, source }) => {

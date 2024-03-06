@@ -1,5 +1,5 @@
-import { ButtoTitleStatus, ButtonStatus } from "../StatusQuery/style"
-import { ButtoLevelQueryTitleStatus, ButtonLevelQueryStyle } from "./style"
+import { ButtoTitleStatus, ButtonStatus } from "../StatusQuery/Style"
+import { ButtoLevelQueryTitleStatus, ButtonLevelQueryStyle } from "./Style"
 
 export const ButtonLevelQuery = ({textButton, clickButton=false, onPress}) => {
     return (

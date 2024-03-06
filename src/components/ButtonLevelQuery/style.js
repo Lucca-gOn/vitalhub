@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components"
-import { ButtoTitleStatus, ButtonStatus } from "../StatusQuery/style"
+import { ButtoTitleStatus, ButtonStatus } from "../StatusQuery/Style"
 
 export const ButtonLevelQueryStyle = styled.TouchableHighlight`
     align-items: center;

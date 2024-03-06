@@ -1,19 +1,19 @@
 import { Modal } from "react-native";
-import { Title, TitleMedicalRecord, TitlePicker, TitleWithInput } from "../Title/style";
-import { Container, PatientContainer, ScheduleContainer } from "../Container/style";
-import { ContentLevelQuery, ContentLinkCenter, ContentPicker, ContentStatus, InputWithTitleContent, InputWithTitleContentPicker, ModalContentMedicalRecord, ModalContentSchedule } from "../Content/style";
-import { ImageModalMedic } from "../MedicalRecordModal/style";
+import { Title, TitleMedicalRecord, TitlePicker, TitleWithInput } from "../Title/Style";
+import { Container, PatientContainer, ScheduleContainer } from "../Container/Style";
+import { ContentLevelQuery, ContentLinkCenter, ContentPicker, ContentStatus, InputWithTitleContent, InputWithTitleContentPicker, ModalContentMedicalRecord, ModalContentSchedule } from "../Content/Style";
+import { ImageModalMedic } from "../MedicalRecordModal/Style";
 import { useState } from "react";
 import { Picker } from '@react-native-picker/picker';
 import { StyleSheet } from 'react-native';
 import RNPickerSelect from 'react-native-picker-select';
-import { InputPicker } from "../Input/style";
-import { SelectPicker, TitleInputPicker } from "./style";
-import { IconSelect } from "../Icon/style";
-import { ButtonLevelQuery } from "../ButtonLevelQuery/buttonlevelquery";
-import { InputWithTitleMedium } from "../InputWithTitleMedium/inputwithtitlemedium";
-import { ButtonMedicalRecord, ButtonTitle } from "../Button/style";
-import { LinkBlueMontserratMargin } from "../Links/style";
+import { InputPicker } from "../Input/Style";
+import { SelectPicker, TitleInputPicker } from "./Style";
+import { IconSelect } from "../Icon/Style";
+import { ButtonLevelQuery } from "../ButtonLevelQuery/ButtonLevelQuery";
+import { InputWithTitleMedium } from "../InputWithTitleMedium/InputWithTitleMedium";
+import { ButtonMedicalRecord, ButtonTitle } from "../Button/Style";
+import { LinkBlueMontserratMargin } from "../Links/Style";
 
 
 

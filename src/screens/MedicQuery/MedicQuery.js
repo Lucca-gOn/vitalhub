@@ -1,13 +1,13 @@
 import { View, Text } from "react-native";
-import { Header } from "../../components/Header/header";
-import { Container } from "../../components/Container/style";
+import { Header } from "../../components/Header/Header";
+import { Container } from "../../components/Container/Style";
 import { useState } from "react";
-import { ContentStatus } from "../../components/Content/style";
-import { StatusQuery } from "../../components/StatusQuery/statusquery";
+import { ContentStatus } from "../../components/Content/Style";
+import { StatusQuery } from "../../components/StatusQuery/StatusQuery";
 import { ListComponent } from "../../components/List/List";
-import { CardQuery } from "../../components/CardQuery/cardquery";
-import { CancellationModal } from "../../components/CancellationModal/cancellationmodal";
-import { MedicalRecordModal } from "../../components/MedicalRecordModal/medicalrecordmodal";
+import { CardQuery } from "../../components/CardQuery/CardQuery";
+import { CancellationModal } from "../../components/CancellationModal/CancellationModal";
+import { MedicalRecordModal } from "../../components/MedicalRecordModal/MedicalRecordModal";
 
 const Query = [
     { id: 1, nome: "Lucas", situacao: "agendadas" },

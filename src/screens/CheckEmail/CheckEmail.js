@@ -1,12 +1,12 @@
 
-import { Container } from "../../components/Container/style";
-import { LogoVital } from "../../components/Logo/style";
-import { Title } from "../../components/Title/style";
-import { TextBlueEmail, TextGray } from "../../components/Text/style";
-import { ContentCheckEmail } from "../../components/Content/style";
-import { InputNumber } from "../../components/Input/style";
-import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/style";
-import { LinkBlueMontserratMargin } from "../../components/Links/style";
+import { Container } from "../../components/Container/Style";
+import { LogoVital } from "../../components/Logo/Style";
+import { Title } from "../../components/Title/Style";
+import { TextBlueEmail, TextGray } from "../../components/Text/Style";
+import { ContentCheckEmail } from "../../components/Content/Style";
+import { InputNumber } from "../../components/Input/Style";
+import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/Style";
+import { LinkBlueMontserratMargin } from "../../components/Links/Style";
 
 export function CheckEmail () {
     return (

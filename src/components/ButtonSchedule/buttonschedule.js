@@ -1,5 +1,5 @@
-import { ContentIconPatientQuery, ContentSquareIcon } from "../Content/style";
-import { IconStethoscope } from "../Icon/style";
+import { ContentIconPatientQuery, ContentSquareIcon } from "../Content/Style";
+import { IconStethoscope } from "../Icon/Style";
 
 export const ButtonSchedule = ({
     onPressSchedule

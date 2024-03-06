@@ -1,10 +1,10 @@
-import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/style";
-import { Container } from "../../components/Container/style";
-import { Input } from "../../components/Input/style";
-import { LinkBlueMontserratMargin } from "../../components/Links/style";
-import { LogoVital } from "../../components/Logo/style";
-import { TextGrayCreateAccount } from "../../components/Text/style";
-import { Title } from "../../components/Title/style";
+import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/Style";
+import { Container } from "../../components/Container/Style";
+import { Input } from "../../components/Input/Style";
+import { LinkBlueMontserratMargin } from "../../components/Links/Style";
+import { LogoVital } from "../../components/Logo/Style";
+import { TextGrayCreateAccount } from "../../components/Text/Style";
+import { Title } from "../../components/Title/Style";
 
 export function CreateAccount() {
     return (

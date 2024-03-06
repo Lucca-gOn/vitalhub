@@ -1,9 +1,9 @@
-import { ButtonMedicalRecord, ButtonTitle } from "../../components/Button/style";
-import { Container, ContainerSelectClinic } from "../../components/Container/style";
-import { ContentLinkCenter } from "../../components/Content/style";
-import { LinkBlueMontserratMargin } from "../../components/Links/style";
+import { ButtonMedicalRecord, ButtonTitle } from "../../components/Button/Style";
+import { Container, ContainerSelectClinic } from "../../components/Container/Style";
+import { ContentLinkCenter } from "../../components/Content/Style";
+import { LinkBlueMontserratMargin } from "../../components/Links/Style";
 import { SelectClinicCard } from "../../components/SelectClinicCard/selectcliniccard";
-import { Title, TitleSelectClinic } from "../../components/Title/style";
+import { Title, TitleSelectClinic } from "../../components/Title/Style";
 
 export function SelectClinic() {
     return (

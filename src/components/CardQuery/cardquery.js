@@ -1,5 +1,5 @@
 import { AntDesign } from "@expo/vector-icons";
-import { ButtonCard, ButtonText, ClockCard, ContainerCardsList, ContentCard, DataProfileCard, ProfileData, ProfileImage, ProfileName, TextAge, TextBold, ViewRow, } from "./style";
+import { ButtonCard, ButtonText, ClockCard, ContainerCardsList, ContentCard, DataProfileCard, ProfileData, ProfileImage, ProfileName, TextAge, TextBold, ViewRow, } from "./Style";
 
 export const CardQuery = ({
   situacao = "pendente",

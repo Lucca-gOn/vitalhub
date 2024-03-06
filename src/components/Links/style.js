@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TextAccount } from "../Text/style";
+import { TextAccount } from "../Text/Style";
 
 export const LinkMedium = styled.Text`
     font-size: 14px;

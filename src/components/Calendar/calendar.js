@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import moment from "moment";
-import { StyledCalendarStrip } from './style';
+import { StyledCalendarStrip } from './Style';
 import { useFonts, MontserratAlternates_600SemiBold } from '@expo-google-fonts/montserrat-alternates';
 
 export const CalendarList = () => {
