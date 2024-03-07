@@ -1,44 +1,63 @@
-//Importarno recurso do bottom tabs
+// Importar o recurso do bottom tabs
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+const BottomTab = createBottomTabNavigator()
 
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import { Home, MedicQuery } from "../MedicQuery/MedicQuery";
-import { Profile } from "../Profile/Profile";
+// Importando as telas
+import {PatientQuery} from '../../screens/PatientQuery/PatientQuery'
+// import Perfil from '../../screens/PatientQuery/PatientQuery'
+
+
 import { FontAwesome, FontAwesome5 } from '@expo/vector-icons'
-
-
-const BottomTab = createBottomTabNavigator();
+import { ContentIcon, TextIcon } from './Style'
 
 export const Main = () => {
-    return(
-        <BottomTab.Navigator
-            screenOptions={({route}) => ({
-                tabBarStyle: { backgroundColor: "#FFFFFF", height: 80, paddingTop: 10,},
-                tabBarActiveBackgroundColor: "transparent",
-                tabBarShowLabel: false,
-                headerShown: false,
+  return (
+    <BottomTab.Navigator
+      // Definir a rota inicial
+      initialRouteName="PatientQuery"
+
+      screenOptions={ ({ route }) => ({
+        tabBarStyle: { backgroundColor: "#FFFFFF", height : 80, paddingTop: 10 },
+        tabBarActiveBackgroundColor : "transparent",
+        tabBarShowLabel : false,
+        headerShown: false,
+
+        tabBarIcon : ({ focused }) => {
+
+          if( route.name === "PatientQuery" )
+          {
+            return (
+              <ContentIcon 
+                tabBarActiveBackgroundColor={ focused ? "#ECF2FF" : "transparent" }
+              >
+                <FontAwesome name='calendar' size={18} color="#4E4B59" />
+                { focused && <TextIcon>Agenda</TextIcon> }
+              </ContentIcon>
+            )
+          }else{
+            return (
+              <ContentIcon 
+                tabBarActiveBackgroundColor={ focused ? "#ECF2FF" : "transparent" }
+              >
+                <FontAwesome5 name='user-circle' size={22} color="#4E4B59" />
+                { focused && <TextIcon>Perfil</TextIcon> }
+              </ContentIcon>
+            )
+          }
+        }
+      }) }
+    >
+      
+      <BottomTab.Screen 
+        name="PatientQuery"
+        component={ PatientQuery }
+      />
 
 
-                tabBarIcon: ({focused}) => {
-                    if ( route.name === Home) {
-                        return (
-                            <>
-                            
-                            </>
-                        )
-                    } else {
-                        
-                    }
-                }
-
-            })}
-            //Define a rota inicial
-            initialRouteName="Home"
-        >
-            {/* Criando a rota da home */}
-            <BottomTab.Screen
-                name="Home"
-                component={MedicQuery}
-            />
-        </BottomTab.Navigator>
-    )
+      {/* <BottomTab.Screen 
+        name="Perfil"
+        component={ PatientQuery }
+      /> */}
+    </BottomTab.Navigator>
+  )
 }

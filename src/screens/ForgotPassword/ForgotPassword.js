@@ -5,7 +5,7 @@ import { TextGray } from "../../components/Text/Style";
 import { Input } from "../../components/Input/Style";
 import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/Style";
 
-export function ForgotPassword () {
+export function ForgotPassword ({navigation}) {
     return (
         <Container>
             <LogoVital/>
@@ -16,7 +16,7 @@ export function ForgotPassword () {
             
             <Input>Usuário ou E-mail</Input>
             
-            <ButtonMarginBlue>
+            <ButtonMarginBlue onPress={() => navigation.navigate('CheckEmail')}>
                 <ButtonTitle>Continuar</ButtonTitle>
             </ButtonMarginBlue>
         </Container>

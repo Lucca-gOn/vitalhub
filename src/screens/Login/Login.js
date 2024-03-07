@@ -13,6 +13,10 @@ export function Login({ navigation }) {
     async function Login() {
         navigation.navigate("Main")
     }
+    
+    async function Login() {
+        navigation.navigate("Main")
+    }
 
     return (
         <Container>
@@ -24,9 +28,9 @@ export function Login({ navigation }) {
 
             <Input placeholder="Senha" secureTextEntry />
 
-            <LinkMedium>Esqueceu sua senha?</LinkMedium>
+            <LinkMedium onPress={() => navigation.navigate('ForgotPassword')}>Esqueceu sua senha?</LinkMedium>
 
-            <Button>
+            <Button onPress={() => Login()}>
                 <ButtonTitle>Entrar</ButtonTitle>
             </Button>
 
@@ -37,7 +41,7 @@ export function Login({ navigation }) {
 
             <ContentAccount>
                 <TextAccount>Não tem conta?</TextAccount>
-                <LinkBlueMontserrat>Crie uma conta agora!</LinkBlueMontserrat>
+                <LinkBlueMontserrat onPress={() => navigation.navigate('CreateAccount')}>Crie uma conta agora!</LinkBlueMontserrat>
             </ContentAccount>
         </Container>
     );

@@ -7,7 +7,8 @@ import RNPickerSelect from 'react-native-picker-select';
 import { ContentLinkCenter, InputWithTitleContent } from "../../components/Content/Style";
 import { ButtonMedicalRecord, ButtonTitle } from "../../components/Button/Style";
 import { LinkBlueMontserratMargin } from "../../components/Links/Style";
-import { CalendarChoose } from "../../components/CalendarChoose/calendarchoose";
+import { CalendarChoose } from "../../components/CalendarChoose/calendarchoose.js";
+
 
 export function SelectDate() {
 

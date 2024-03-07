@@ -8,6 +8,7 @@ import { ResetPassword } from './src/screens/ResetPassword/ResetPassword';
 import { CreateAccount } from './src/screens/CreateAccount/CreateAccount';
 import { MedicQuery } from './src/screens/MedicQuery/MedicQuery';
 import { Image } from 'react-native';
+import {Main} from "./src/screens/Main/Main"
 
 
 //Instancia do stack navigator
@@ -50,8 +51,9 @@ export default function App() {
       {/*Componente para navegação*/}
       <Stack.Navigator>
         {/*    Nome da tela                  componente da tela            titulo*/}
-        <Stack.Screen name="Navegacao" component={Navigation} options={{ title: "Navegação" }} />
+        {/* <Stack.Screen name="Navegacao" component={Navigation} options={{ title: "Navegação" }} /> */}
         <Stack.Screen name="Login" component={Login} options={{ title: "Login" }} />
+        <Stack.Screen name="Main" component={Main}/>
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{ title: "Esqueci senha" }} />
         <Stack.Screen name="CheckEmail" component={CheckEmail} options={{ title: "Código E-mail" }} />
         <Stack.Screen name="ResetPassword" component={ResetPassword} options={{ title: "Redefinir senha" }} />

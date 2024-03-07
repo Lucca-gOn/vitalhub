@@ -6,7 +6,7 @@ import { LogoVital } from "../../components/Logo/Style";
 import { TextGrayCreateAccount } from "../../components/Text/Style";
 import { Title } from "../../components/Title/Style";
 
-export function CreateAccount() {
+export function CreateAccount({navigation}) {
     return (
         <Container>
             <LogoVital/>
@@ -19,11 +19,11 @@ export function CreateAccount() {
             <Input placeholder="Senha"/>
             <Input placeholder="Confirmar senha"/>
 
-            <ButtonMarginBlue>
+            <ButtonMarginBlue onPress={() => navigation.navigate('Login')}> 
                 <ButtonTitle>Cadastrar</ButtonTitle>
             </ButtonMarginBlue>
 
-            <LinkBlueMontserratMargin>Cancelar</LinkBlueMontserratMargin>
+            <LinkBlueMontserratMargin onPress={() => navigation.navigate('Login')}>Cancelar</LinkBlueMontserratMargin>
         </Container>
     );
 }

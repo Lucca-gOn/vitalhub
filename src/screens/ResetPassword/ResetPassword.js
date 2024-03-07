@@ -5,7 +5,7 @@ import { TextGray } from "../../components/Text/Style";
 import { Input } from "../../components/Input/Style";
 import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/Style";
 
-export function ResetPassword () {
+export function ResetPassword ({navigation}) {
     return (
         <Container>
             <LogoVital/>
@@ -18,7 +18,7 @@ export function ResetPassword () {
             <Input placeholder="Confirmar nova senha"/>
 
             <ButtonMarginBlue>
-                <ButtonTitle>Confirmar nova senha</ButtonTitle>
+                <ButtonTitle onPress={() => navigation.navigate('Login')}>Confirmar nova senha</ButtonTitle>
             </ButtonMarginBlue>
         </Container>
     );

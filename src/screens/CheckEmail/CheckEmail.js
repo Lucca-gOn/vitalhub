@@ -8,7 +8,7 @@ import { InputNumber } from "../../components/Input/Style";
 import { ButtonMarginBlue, ButtonTitle } from "../../components/Button/Style";
 import { LinkBlueMontserratMargin } from "../../components/Links/Style";
 
-export function CheckEmail () {
+export function CheckEmail ({ navigation }) {
     return (
         <Container>
             
@@ -26,7 +26,7 @@ export function CheckEmail () {
                 <InputNumber placeholder="0" maxLength={1}/>
             </ContentCheckEmail>
 
-            <ButtonMarginBlue>
+            <ButtonMarginBlue onPress={() => navigation.navigate('ResetPassword')}>
                 <ButtonTitle>Entrar</ButtonTitle>
             </ButtonMarginBlue>
 
