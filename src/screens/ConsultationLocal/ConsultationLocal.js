@@ -1,8 +1,11 @@
 import { Marker } from "react-native-maps";
 import { Container } from "../../components/Container/Style";
 import { MapLocal } from "./style";
-import { MapContent } from "../../components/Content/Style";
+import { DoubleView, MapContent, ViewColum } from "../../components/Content/Style";
 import { Subtitle, Title, TitleCalendar } from "../../components/Title/Style";
+import { ScrollForm } from "../InsertMedicalRecord/style";
+import { BoxInput, InputDouble, InputLabel, InputNotEditable } from "../../components/Input/Style";
+import { ViewRow } from "../../components/CardQuery/Style";
 
 export function ConsultationLocal() {
     return (
@@ -27,7 +30,36 @@ export function ConsultationLocal() {
             <MapContent>
                 <TitleCalendar>Clínica Natureh</TitleCalendar>
                 <Subtitle>São Paulo , SP</Subtitle>
+
+                <ViewColum style={{ width: '90%' }}>
+                    <InputLabel>Endereço</InputLabel>
+                    <InputNotEditable
+                        placeholder="Rua Vicenso Silva, 987"
+                    />
+                </ViewColum>
+
+                <DoubleView>
+                    <ViewColum>
+                        <InputLabel>Número</InputLabel>
+                        <BoxInput>
+                            <InputDouble
+                                placeholder="578"
+                            />
+                        </BoxInput>
+                    </ViewColum>
+
+                    <ViewColum>
+                        <InputLabel>Bairro</InputLabel>
+                        <BoxInput>
+                            <InputDouble
+                                placeholder="Moema-SP"
+                            />
+                        </BoxInput>
+                    </ViewColum>
+
+                </DoubleView>
             </MapContent>
+
         </Container>
     )
 }

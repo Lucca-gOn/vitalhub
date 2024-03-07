@@ -51,7 +51,7 @@ export default function App() {
       {/*Componente para navegação*/}
       <Stack.Navigator>
         {/*    Nome da tela                  componente da tela            titulo*/}
-        {/* <Stack.Screen name="Navegacao" component={Navigation} options={{ title: "Navegação" }} /> */}
+        <Stack.Screen name="Navegacao" component={Navigation} options={{ title: "Navegação" }} />
         <Stack.Screen name="Login" component={Login} options={{ title: "Login" }} />
         <Stack.Screen name="Main" component={Main}/>
         <Stack.Screen name="ForgotPassword" component={ForgotPassword} options={{ title: "Esqueci senha" }} />

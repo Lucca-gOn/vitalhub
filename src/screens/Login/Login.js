@@ -13,10 +13,6 @@ export function Login({ navigation }) {
     async function Login() {
         navigation.navigate("Main")
     }
-    
-    async function Login() {
-        navigation.navigate("Main")
-    }
 
     return (
         <Container>

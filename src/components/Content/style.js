@@ -107,4 +107,20 @@ export const MapContent = styled.View`
     margin-top: -25px;
     align-items: center;
 `
+export const AlighCardCenterContent = styled.View`
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+`
+export const DoubleView = styled.View`
+    width: 90%;
+    margin-top:24px;
+    flex-direction: row;
+    gap: 32px;
 
+`
+
+export const ViewColum = styled.View`
+    flex-direction: column;
+    width: 45%;
+`
