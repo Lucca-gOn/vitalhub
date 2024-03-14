@@ -6,6 +6,11 @@ import { Subtitle, Title, TitleCalendar } from "../../components/Title/Style";
 import { ScrollForm } from "../InsertMedicalRecord/style";
 import { BoxInput, InputDouble, InputLabel, InputNotEditable } from "../../components/Input/Style";
 import { ViewRow } from "../../components/CardQuery/Style";
+import MapViewDirections from "react-native-maps-directions";
+import { requestForegroundPermissionsAsync, getCurrentPositionAsync, watchPositionAsync, LocationAccuracy } from "expo-location";
+import { useEffect, useRef, useState } from "react";
+import { ActivityIndicator, Text } from 'react-native';
+import { mapskey } from "../../../Utils/mapsApiKey";
 
 export const ConsultationLocal = () => {
     const mapReference = useRef(null);
