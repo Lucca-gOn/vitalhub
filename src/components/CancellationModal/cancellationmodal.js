@@ -5,8 +5,9 @@ import { LinkBlueMontserrat, LinkBlueMontserratMargin } from "../Links/Style";
 import { TextGrayCancelModal } from "../Text/Style";
 import { PatientContainer } from "../Container/Style";
 import { ModalContent } from "../Content/Style";
+import * as Notifications from '"expo-notifications"';
 
-export const CancellationModal = ({ visible, setShowModalCancel, ...rest }) => {
+export const CancellationModal = ({ visible, setShowModalCancel, handleCallNotifications, ...rest }) => {
     return (
         <Modal {...rest} visible={visible} transparent={true} animationType="fade">
             <PatientContainer>
@@ -16,7 +17,7 @@ export const CancellationModal = ({ visible, setShowModalCancel, ...rest }) => {
                     <TextGrayCancelModal>Ao cancelar essa consulta, abrirá uma possível disponibilidade no seu horário, deseja mesmo cancelar essa consulta?</TextGrayCancelModal>
 
                     <ButtonMarginBlue onPress={() => setShowModalCancel(false)}>
-                        <ButtonTitle>Confirmar</ButtonTitle>
+                        <ButtonTitle onPress={handleCallNotifications}>Confirmar</ButtonTitle>
                     </ButtonMarginBlue>
 
                     <LinkBlueMontserratMargin onPress={() => setShowModalCancel(false)}>Cancelar</LinkBlueMontserratMargin>
